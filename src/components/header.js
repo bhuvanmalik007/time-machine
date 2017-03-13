@@ -6,8 +6,8 @@ export default class Header extends Component {
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-          <Menu.Item header>Time Machine</Menu.Item>
-          <Menu.Item onClick={this.openGit}><Icon name='github' size='large'></Icon></Menu.Item>
+          <Menu.Item header><h3>Time Machine</h3></Menu.Item>
+          <Menu.Item onClick={this.openGit}><Icon name='github' size='big'></Icon></Menu.Item>
         </Menu>
       </Segment>
     )
