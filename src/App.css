@@ -1,9 +1,10 @@
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
+  Align-items: stretch;
+  background-color: #000000;
+  height: 100vh;
+  min-height: 100%
 }
 
 .flex-ace-container {
@@ -15,6 +16,10 @@
 
 .transpilerStrip {
   background: #ABB2B9;
+}
+
+.Content{
+  flex:1;
 }
 
 .aceEditor {

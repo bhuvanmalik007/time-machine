@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 import AceEditor from 'react-ace';
 import 'brace/mode/javascript';
 import 'brace/theme/monokai';
-import { Message, Divider, Icon } from 'semantic-ui-react'
+import { Message, Divider } from 'semantic-ui-react'
 
 
 class Transpiler extends React.Component{
@@ -46,7 +46,6 @@ class Transpiler extends React.Component{
           editorProps={{$blockScrolling: true}}
         />
       </div>
-      <Message color='black'>Made with <Icon name="heart outline"></Icon>using React by Bhuvan Malik.</Message>
     </div>
     )
   }

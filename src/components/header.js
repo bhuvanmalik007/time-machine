@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Button, Icon } from 'semantic-ui-react'
+import { Menu, Segment, Icon } from 'semantic-ui-react'
 
 export default class Header extends Component {
   render() {
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-          <Menu.Item header><h3>Time Machine</h3></Menu.Item>
-          <Menu.Item onClick={this.openGit}><Icon name='github' size='big'></Icon></Menu.Item>
+          <Menu.Item header>Time-Machine</Menu.Item>
+          <Menu.Item name='home' active={this.props.active === 'home'} onClick={this.props.tabChanger} />
+          <Menu.Item name='What is ES6' active={this.props.active === 'What is ES6'}  onClick={this.props.tabChanger} />
+          <Menu.Item onClick={this.openGit}><Icon name='github' size='large'></Icon></Menu.Item>
         </Menu>
       </Segment>
     )
